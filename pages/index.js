@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
      
-        <div className="flex flex-col md:flex-row p-12 my-15">
+        <div className="flex flex-col md:flex-row p-12 my-16">
           <div className="flex-auto md:w-32">
             <h2 className="text-2xl font-semibold mb-3">Merhaba,Ben Mehmet</h2>
             <p className="text-gray-600 text-lg mb-4">Yazılım ile uğraşmayı seviyorum.</p>

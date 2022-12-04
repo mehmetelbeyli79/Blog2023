@@ -1,22 +1,42 @@
-
+import { useEffect, useState } from "react";
+import { noktaGosterim } from "../lib/metinFunc";
 export default function YoutubeStats({ stats }) {
-    const data=stats.items[0].statistics;
-    return (
-        <div className="mt-5 lg:flex justify-center">
-          <div className="px-4 lg:w-1/3 my-3 lg:my-0 py-5 mx-5 bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
-            <dt className="font-medium text-cyan-300 truncate">Total Subscribers</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-200">{data.subscriberCount}</dd>
-          </div>
-  
-          <div className="px-4 lg:w-1/3 my-3 lg:my-0 py-5 mx-5 bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
-            <dt className="font-medium text-cyan-300 truncate">Total Views</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-200">{data.viewCount}</dd>
-          </div>
-  
-          <div className="px-4 lg:w-1/3 my-3 lg:my-0 py-5 mx-5  bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
-            <dt className="font-medium text-cyan-300 truncate">Videos Uploaded</dt>
-            <dd className="mt-1 text-3xl font-semibold text-gray-200">{data.videoCount}</dd>
-          </div>
+  const data = stats.items[0].statistics;
+
+  return (
+    <div className="lg:flex-col">
+      <div className="flex justify-center">
+        <p className="lg:w-3/6 px-4 sm:p-6 text-2xl font-medium bg-slate-200 rounded-sm">
+          Yazılım ve Teknoloji alanında ürettiğim eğitim videolarının
+          istatistikleri ve tüm videoların listesi aşağıdadır. Kanala abone ve
+          üye olarak destek olabilir ve kanalın ayrıcalıkların
+          yararlanabilirsiniz.
+        </p>
+      </div>
+      <div className="mt-5 lg:flex justify-center">
+        <div className="px-4 lg:w-1/6 my-3 lg:my-0 py-5 mx-5 bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
+          <dt className="font-medium text-cyan-300 truncate">Abone Sayısı</dt>
+          <dd className="mt-1 text-3xl font-semibold text-gray-200">
+            {noktaGosterim(data.subscriberCount)}
+          </dd>
         </div>
-    );
-  }
+
+        <div className="px-4 lg:w-1/6 my-3 lg:my-0 py-5 mx-5 bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
+          <dt className="font-medium text-cyan-300 truncate">
+            Toplam Gösterim
+          </dt>
+          <dd className="mt-1 text-3xl font-semibold text-gray-200">
+            {noktaGosterim(data.viewCount)}
+          </dd>
+        </div>
+
+        <div className="px-4 lg:w-1/6 my-3 lg:my-0 py-5 mx-5  bg-gray-800 shadow rounded-md overflow-hidden sm:p-6">
+          <dt className="font-medium text-cyan-300 truncate">Video Sayısı</dt>
+          <dd className="mt-1 text-3xl font-semibold text-gray-200">
+            {noktaGosterim(data.videoCount)}
+          </dd>
+        </div>
+      </div>
+    </div>
+  );
+}
