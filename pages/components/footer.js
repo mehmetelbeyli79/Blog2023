@@ -2,15 +2,15 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer class="bg-white dark:bg-gray-900">
-      <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-        <p class="text-md text-gray-600 dark:text-gray-300">
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
+        <p className="text-md text-gray-600 dark:text-gray-300">
           Bu sitenin kodları indirilip kullanılabilir.{" "}
           {new Date().getFullYear()}
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 fill-current inline mx-3 -mt-1"
+            className="w-5 h-5 fill-current inline mx-3 -mt-1"
             viewBox="0 0 32 32"
           >
             <title>point-right</title>
@@ -19,10 +19,10 @@ function Footer() {
           <a href="#" className="underline underline-offset-2">Github</a>
         </p>
 
-        <div class="flex -mx-2">
-          <a href="#" class="social" aria-label="Github">
+        <div className="flex -mx-2">
+          <a href="#" className="social" aria-label="Github">
             <svg
-              class="w-5 h-5 fill-current"
+              className="w-5 h-5 fill-current"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -30,11 +30,11 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" class="social" aria-label="Twitter">
+          <a href="#" className="social" aria-label="Twitter">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 fill-current"
+              className="w-5 h-5 fill-current"
               viewBox="0 0 32 32"
             >
               <title>twitter</title>
@@ -42,33 +42,33 @@ function Footer() {
             </svg>
           </a>
 
-          <a href="#" class="social" aria-label="Facebook">
+          <a href="#" className="social" aria-label="Facebook">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 fill-current"
+              className="w-5 h-5 fill-current"
               viewBox="0 0 32 32"
             >
               <title>facebook2</title>
               <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
             </svg>
           </a>
-          <a href="#" class="social" aria-label="LinkedIn">
+          <a href="#" className="social" aria-label="LinkedIn">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 fill-current"
+              className="w-5 h-5 fill-current"
               viewBox="0 0 32 32"
             >
               <title>linkedin</title>
               <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
             </svg>
           </a>
-          <a href="#" class="social" aria-label="LinkedIn">
+          <a href="#" className="social" aria-label="LinkedIn">
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 fill-current"
+              className="w-5 h-5 fill-current"
               viewBox="0 0 32 32"
             >
               <title>instagram</title>

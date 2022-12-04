@@ -1,4 +1,3 @@
-import axios from "axios";
 export const fetchData = async (url) => {
   try {
     const res = await fetch(url);
