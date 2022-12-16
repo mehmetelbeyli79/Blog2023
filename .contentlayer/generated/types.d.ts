@@ -15,8 +15,12 @@ export type Post = {
   type: 'Post'
   /** The title of the post */
   title: string
+  /** The subtitle of the post */
+  subtitle: string
   /** The date of the post */
   date: IsoDateTimeString
+  /** Meta Etiketleri */
+  keywords: string
   /** Markdown file body */
   body: Markdown
   url: string

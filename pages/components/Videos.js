@@ -6,7 +6,7 @@ function Videos({ videos }) {
     const veri=Object.values(videos)[5];
     console.log(veri);
   return (
-    <div className="flex flex-wrap justify-center my-20">
+    <div className="flex flex-wrap justify-center my-10">
       
         {
             veri.map((video,index)=>{

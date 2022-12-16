@@ -1,6 +1,8 @@
 ---
 title: Content Layer Deneme
+subtitle: Deneme 
 date: 2023-12-24
+keywords: html,css,javascript
 ---
 
 Ullamco et nostrud magna commodo nostrud occaecat quis pariatur id ipsum. Ipsum

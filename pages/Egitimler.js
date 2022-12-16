@@ -4,7 +4,9 @@ import { fetchData } from "./lib/utils";
 export default function Egitimler({ data,videos }) {
   return (
     <div className="my-16">
+      
       <YoutubeStats stats={data} />
+      <h2 className="text-center mt-10 text-3xl">En Son Yayınlanan Videolar</h2>
       <Videos videos={videos}/>
     </div>
   );

@@ -2,6 +2,7 @@
 title: Lorem Ipsum
 subtitle: İlk Yazımız
 date: 2021-12-24
+keywords: html,css,javascript
 
 ---
 

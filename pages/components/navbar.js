@@ -1,33 +1,35 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 function Navbar() {
+  const router = useRouter();
   return (
     <nav className="bg-white shadow dark:bg-gray-800">
       <div className="container flex items-center justify-center p-6 mx-auto text-gray-600 text-lg capitalize dark:text-gray-300">
         <Link
           href="/"
-          className="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 hover:border-blue-500 mx-1.5 sm:mx-6"
+          className={router.pathname == "/" ? "link-aktif" : "link-pasif"}
         >
           Anasayfa
         </Link>
 
         <Link
           href="/Egitimler"
-          className="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          className={router.pathname == "/Egitimler" ? "link-aktif" : "link-pasif"}
         >
           Eğitimler
         </Link>
 
         <a
           href="/Blog"
-          className="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          className={router.pathname == "/Blog" ? "link-aktif" : "link-pasif"}
         >
           Yazılar
         </a>
 
         <a
-          href="#"
-          className="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+          href="/Siteler"
+          className={router.pathname == "/Siteler" ? "link-aktif" : "link-pasif"}
         >
           Yararlı Siteler
         </a>

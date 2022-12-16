@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { tr } from "date-fns/locale";
 import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
 
@@ -12,31 +13,36 @@ export async function getStaticProps() {
 
 function PostCard(post) {
   return (
-    <div className="mb-6">
-      <time dateTime={post.date} className="block text-sm text-slate-600">
-        {format(parseISO(post.date), 'LLLL d, yyyy')}
-      </time>
+    <div className="mb-6 ">
+      
       <h2 className="text-lg">
-        <Link className="text-blue-700 hover:text-blue-900" href={post.url}>
+        <Link className="text-blue-700 hover:text-blue-900 font-bold" href={post.url}>
           {post.title}
         </Link>
       </h2>
+      <h2 className='text-slate-500 '>{post.subtitle}</h2>
+      <time dateTime={post.date} className="block text-sm text-slate-600">
+        {format(parseISO(post.date), 'd LLLL yyyy',{
+          locale:tr,
+        })}
+      </time>
     </div>
   )
 }
 
 export default function Home({ posts }) {
   return (
-    <div className="mx-auto max-w-2xl py-16 text-center">
+    <div className="mx-auto max-w-2xl py-16 ">
       <Head>
-        <title>Contentlayer Blog Example</title>
+        <title>Yazılar ve Notlarım</title>
       </Head>
 
-      <h1 className="mb-8 text-3xl font-bold">Contentlayer Blog Example</h1>
-
+      <h1 className="mb-16 text-3xl font-bold text-center">Yazılar ve Notlarım</h1>
+      <div className='mb-20'>
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}
+      </div>
     </div>
   )
 }
