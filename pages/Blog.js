@@ -13,7 +13,7 @@ export async function getStaticProps() {
 
 function PostCard(post) {
   return (
-    <div className="mb-6 ">
+    <div className="mb-6 lg:mx-0 mx-3 ">
       
       <h2 className="text-lg">
         <Link className="text-blue-700 hover:text-blue-900 font-bold" href={post.url}>

@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import parse from "html-react-parser";
 import { tr } from "date-fns/locale";
 import { format, parseISO } from "date-fns";
+import Link from "next/link";
 function PostDetay() {
   const router = useRouter();
   const url = router.query.pid;
@@ -20,7 +21,8 @@ function PostDetay() {
         <meta name="author" content="Mehmet Elbeyli" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col my-16 w-full items-center justify-center">
+      <div className="flex flex-col my-16 w-full items-center">
+        
         {post.map((veri,index) => {
           return (
             <div className="flex-col lg:w-2/5 mx-3 lg:mx-0" key={index}>
@@ -37,6 +39,9 @@ function PostDetay() {
             </div>
           );
         })}
+        <Link href="/Blog" className="text-start text-red-900 mb-5 bg-red-200 p-2 rounded-md">
+          Geri Dön 
+        </Link>
       </div>
     </div>
   );

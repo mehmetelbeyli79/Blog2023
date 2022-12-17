@@ -7,3 +7,4 @@ export const fetchData = async (url) => {
     console.log(err);
   }
 };
+

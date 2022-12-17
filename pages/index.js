@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,7 +9,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-     
         <div className="flex flex-col md:flex-row p-12 my-16">
           <div className="flex-auto md:w-32">
             <h2 className="text-2xl font-semibold mb-3">Merhaba,Ben Mehmet</h2>
