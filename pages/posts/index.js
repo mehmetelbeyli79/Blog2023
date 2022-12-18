@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router'
 
 const Posts = () => {
-  const router = useRouter()
-  console.log(router.query);
+  const router = useRouter();
   return <p>Tüm Postlar</p>
 }
 

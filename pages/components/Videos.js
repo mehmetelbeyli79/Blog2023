@@ -4,7 +4,6 @@ import React, { useState } from "react";
 function Videos({ videos }) {
     
     const veri=Object.values(videos)[5];
-    console.log(veri);
   return (
     <div className="flex flex-wrap justify-center my-10">
       
@@ -23,7 +22,7 @@ function Videos({ videos }) {
                     <a
                       href="#"
                       className="block text-lg font-bold text-gray-800 dark:text-white"
-                      tabindex="0"
+                      
                       role="link"
                     >
                       {video.snippet.title}
