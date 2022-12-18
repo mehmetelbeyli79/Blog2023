@@ -11,10 +11,10 @@ function Siteler({ data }) {
       <h2 className="text-2xl mb-8">Link Havuzum</h2>
       <h2 className="text-lg mb-8">Son Eklenen 10 Yer İmi</h2>
       <div className="w-2/5">
-        {veri.map((v) => {
+        {veri.map((v,index) => {
           return (
-            <Link href={v.link} target="_blank">
-              <div className="flex mb-2">
+            <Link href={v.link} target="_blank" key={index}>
+              <div className="flex mb-2" key={index}>
                 <img src={v.cover} className="w-32 h-32" />
                 <div className="flex flex-col ml-4">
                   <p className="font-medium mb-2">{v.title}</p>

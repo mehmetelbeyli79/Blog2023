@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-auto mt-12  md:w-32 md:mt-0">
-            <img src="deneme.jpg" className="rounded-md md:ml-4" />
+            <Image src="/deneme.jpg" width={500} height={500} className="rounded-md md:ml-4" />
           </div>
         </div>
       </main>
