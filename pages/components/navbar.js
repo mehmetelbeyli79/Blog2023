@@ -20,19 +20,19 @@ function Navbar() {
           Eğitimler
         </Link>
 
-        <a
+        <Link
           href="/Blog"
           className={router.pathname == "/Blog" ? "link-aktif" : "link-pasif"}
         >
           Yazılar
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/Siteler"
           className={router.pathname == "/Siteler" ? "link-aktif" : "link-pasif"}
         >
           Yararlı Siteler
-        </a>
+        </Link>
       </div>
     </nav>
   );

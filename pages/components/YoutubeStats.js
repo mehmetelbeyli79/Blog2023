@@ -12,7 +12,7 @@ export default function YoutubeStats({ stats }) {
           üye olarak destek olabilir ve kanalın ayrıcalıkların
           yararlanabilirsiniz.
           Ayrıca destek olmak için ↲<br/>
-          <a href="https://www.buymeacoffee.com/SosyalBilisim" className="bg-slate-400 p-2 rounded-md block text-center" target="_blank">Buy me Coffees</a>
+          <a href="https://www.buymeacoffee.com/SosyalBilisim" rel="noreferrer" className="bg-slate-400 p-2 rounded-md block text-center" target="_blank">Buy me Coffees</a>
         </p>
       </div>
       <h2 className="text-center mt-10 text-3xl">Kanal İstatikleri</h2>
