@@ -1,7 +1,6 @@
 {
   "name": "blog2023",
   "version": "0.1.0",
-  "homepage": "https://blog.mehmetelbeyli.net/",
   "private": true,
   "scripts": {
     "dev": "next dev",
