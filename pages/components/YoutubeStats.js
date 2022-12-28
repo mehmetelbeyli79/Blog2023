@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { noktaGosterim } from "../lib/metinFunc";
+import { noktaGosterim } from "../../lib/metinFunc";
 export default function YoutubeStats({ stats }) {
   const data = stats.items[0].statistics;
 

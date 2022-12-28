@@ -1,6 +1,6 @@
 import Videos from "./components/Videos";
 import YoutubeStats from "./components/YoutubeStats";
-import { fetchData } from "./lib/utils";
+import { fetchData } from "../lib/utils";
 export default function Egitimler({ data,videos }) {
   return (
     <div className="my-16">

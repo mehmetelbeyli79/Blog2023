@@ -1,4 +1,4 @@
-import { fetchData } from "./lib/yer_imleri";
+import { fetchData } from "../lib/yer_imleri";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { parseISO, formatDistanceToNowStrict } from "date-fns";
