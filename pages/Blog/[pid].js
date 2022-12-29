@@ -11,19 +11,19 @@ function PostDetay() {
   const url = router.query.pid;
   //console.log(allPosts[0].url)
   const post = allPosts.filter((p) => p.url === "/Blog/" + url);
-  console.log(post);
+  //console.log(post);
   return (
     <div>
       <Head>
-        <title>{post[0].title}</title>
-        <meta name="description" content={post[0].title || null} />
-        <meta name="keywords" content={post[0].keywords || null} />
+        <title>{post && post[0].title}</title>
+        <meta name="description" content={post && post[0].title} />
+        <meta name="keywords" content={post && post[0].keywords} />
         <meta name="author" content="Mehmet Elbeyli" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col my-16 w-full items-center">
         
-        {post.map((veri,index) => {
+        {post && post.map((veri,index) => {
           return (
             <div className="flex-col lg:w-2/5 mx-3 lg:mx-0" key={index}>
               <h2 className="mb-3 text-3xl">{veri.title || null}</h2>
