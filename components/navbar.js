@@ -22,7 +22,7 @@ function Navbar() {
 
         <Link
           href="/Blog"
-          className={router.pathname == "/Blog" ? "link-aktif" : "link-pasif"}
+          className={router.pathname == "/blog" ? "link-aktif" : "link-pasif"}
         >
           Yazılar
         </Link>

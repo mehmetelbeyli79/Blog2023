@@ -10,7 +10,7 @@ function PostDetay() {
   const router = useRouter();
   const url = router.query.pid;
   //console.log(allPosts[0].url)
-  const post = allPosts.filter((p) => p.url === "/post/" + url);
+  const post = allPosts.filter((p) => p.url === "/Blog/" + url);
   console.log(post);
   return (
     <div>

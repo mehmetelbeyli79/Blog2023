@@ -17,7 +17,7 @@
       "flattenedPath": "post-01"
     },
     "type": "Post",
-    "url": "/post/post-01"
+    "url": "/Blog/post-01"
   },
   {
     "title": "Content Layer Deneme",
@@ -37,7 +37,7 @@
       "flattenedPath": "post-02"
     },
     "type": "Post",
-    "url": "/post/post-02"
+    "url": "/Blog/post-02"
   },
   {
     "title": "Lorem Ipsum",
@@ -57,6 +57,6 @@
       "flattenedPath": "post-03"
     },
     "type": "Post",
-    "url": "/post/post-03"
+    "url": "/Blog/post-03"
   }
 ]
