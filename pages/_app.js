@@ -5,7 +5,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 // ``
-import Layout from "./components/layout";
+import Layout from "../components/layout";
 
 import "../styles/globals.css";
 

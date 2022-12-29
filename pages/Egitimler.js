@@ -1,5 +1,5 @@
-import Videos from "./components/Videos";
-import YoutubeStats from "./components/YoutubeStats";
+import Videos from "../components/Videos";
+import YoutubeStats from "../components/YoutubeStats";
 import { fetchData } from "../lib/utils";
 export default function Egitimler({ data,videos }) {
   return (
