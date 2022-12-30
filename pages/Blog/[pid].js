@@ -15,15 +15,15 @@ function PostDetay() {
   return (
     <div>
       <Head>
-        <title>{post && post[0].title}</title>
-        <meta name="description" content={post && post[0].title} />
-        <meta name="keywords" content={post && post[0].keywords} />
+        <title>{post[0].title ? post[0].title : "" }</title>
+        <meta name="description" content={post[0].title ? post[0].title : ""} />
+        <meta name="keywords" content={post[0].keywords ? post[0].keywords : "" } />
         <meta name="author" content="Mehmet Elbeyli" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col my-16 w-full items-center">
         
-        {post && post.map((veri,index) => {
+        {post ? post.map((veri,index) => {
           return (
             <div className="flex-col lg:w-2/5 mx-3 lg:mx-0" key={index}>
               <h2 className="mb-3 text-3xl">{veri.title || null}</h2>
@@ -38,7 +38,7 @@ function PostDetay() {
               </p>
             </div>
           );
-        })}
+        }): ""}
         <Link href="/Blog" className="text-start text-red-900 mb-5 bg-red-200 p-2 rounded-md">
           Geri Dön 
         </Link>
