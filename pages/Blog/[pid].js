@@ -9,6 +9,9 @@ import Link from "next/link";
 function PostDetay() {
   const router = useRouter();
   const url = router.query.pid;
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
   //console.log(allPosts[0].url)
   const post = allPosts.filter((p) => p.url === "/Blog/" + url);
   //console.log(post);
