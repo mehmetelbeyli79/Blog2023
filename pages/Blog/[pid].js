@@ -15,7 +15,7 @@ export async function getStaticProps() {
 export async function getStaticPaths() {
   return {
     paths: [
-      { params: { pid: 'post-1'} },
+      { params: { pid: 'post-1'},params: { pid: 'post-2'},params: { pid: 'post-3'} },
     ],
     fallback:false,
   };
