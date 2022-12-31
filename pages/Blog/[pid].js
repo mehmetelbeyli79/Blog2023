@@ -7,25 +7,10 @@ import { tr } from "date-fns/locale";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
 
-export async function getStaticProps() {
-  const posts = allPosts;
-  return { props: {posts} };
-}
-
-export async function getStaticPaths() {
-  return {
-    paths: [
-      { params: { pid: 'post-1'},params: { pid: 'post-2'},params: { pid: 'post-3'} },
-    ],
-    fallback:false,
-  };
-}
-
-function PostDetay({posts}) {
-  console.log(posts);
+function PostDetay() {
   const router = useRouter();
   const url = router.query.pid;
-  const post1 = posts.filter((p) => p.url === "/Blog/" + url);
+  const post1 = allPosts.filter((p) => p.url === "/Blog/" + url);
   return (
     <div>
       <Head>
