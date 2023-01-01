@@ -7,22 +7,17 @@ import { tr } from "date-fns/locale";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
 
-function PostDetay() {
-  const router = useRouter();
-  const url = router.query.pid;
-  const post1 = allPosts.filter((p) => p.url === "/Blog/" + url);
+function PostDetay({ post1 }) {
+  // const router = useRouter();
+  // const url = router.query.slug;
+  // const post1 = allPosts.filter((p) => p.url === "/Blog/" + url);
+  console.log(post1);
   return (
     <div>
       <Head>
-        <title>{post1[0].title ? post1[0].title : ""}</title>
-        <meta
-          name="description"
-          content={post1[0].title ? post1[0].title : ""}
-        />
-        <meta
-          name="keywords"
-          content={post1[0].keywords ? post1[0].keywords : ""}
-        />
+        <title>{post1[0].title}</title>
+        <meta name="description" content={post1[0].title} />
+        <meta name="keywords" content={post1[0].keywords} />
         <meta name="author" content="Mehmet Elbeyli" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -59,3 +54,32 @@ function PostDetay() {
 }
 
 export default PostDetay;
+export async function getStaticPaths() {
+  //const router = useRouter();
+  //const url = router.query.slug;
+  const paths = allPosts.map((post) => {
+    return {
+      params: {
+        slug: post.url,
+      },
+    };
+  });
+  //console.log(paths);
+  return {
+    paths,
+    fallback: true,
+  };
+}
+export async function getStaticProps({ params }) {
+  //const router = useRouter();
+  //console.log("Çalıştı");
+  const url = "/Blog/" + params.slug;
+  //console.log(url);
+  const post1 = allPosts.filter((p) => p.url === url);
+  //console.log(post1);
+  return {
+    props: {
+      post1,
+    },
+  };
+}

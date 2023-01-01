@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { tr } from "date-fns/locale";
 import { compareDesc, format, parseISO } from 'date-fns'
 import { allPosts } from 'contentlayer/generated'
-
 export async function getStaticProps() {
   const posts = allPosts.sort((a, b) => {
     return compareDesc(new Date(a.date), new Date(b.date))
-  })
+  });
+  //console.log(posts);
   return { props: { posts } }
 }
 

@@ -20,40 +20,40 @@ export default function Home() {
             </p>
             <p className="font-bold text-2xl my-6">Çalıştığım Yazılımlar</p>
             <div className="flex flex-wrap">
-              <span class=" text-amber-600 bg-amber-200 skills">
+              <span className=" text-amber-600 bg-amber-200 skills">
                 HTML
               </span>
-              <span class="text-pink-600 bg-pink-200 skills">
+              <span className="text-pink-600 bg-pink-200 skills">
                 CSS
               </span>
-              <span class="text-green-600 bg-green-200 skills">
+              <span className="text-green-600 bg-green-200 skills">
                 Javascript
               </span>
-              <span class="text-blue-600 bg-blue-200 skills">
+              <span className="text-blue-600 bg-blue-200 skills">
                 React
               </span>
-              <span class="text-indigo-600 bg-indigo-200 skills">
+              <span className="text-indigo-600 bg-indigo-200 skills">
                 Bootstrap
               </span>
-              <span class="text-sky-600 bg-sky-200 skills">
+              <span className="text-sky-600 bg-sky-200 skills">
                 Tailwind
               </span>
-              <span class="text-lime-600 bg-lime-200 skills">
+              <span className="text-lime-600 bg-lime-200 skills">
                 Firebase
               </span>
-              <span class="text-slate-600 bg-slate-200 skills">
+              <span className="text-slate-600 bg-slate-200 skills">
                 PHP
               </span>
-              <span class="text-purple-600 bg-purple-200 skills">
+              <span className="text-purple-600 bg-purple-200 skills">
                 C#
               </span>
-              <span class="text-orange-600 bg-orange-200 skills">
+              <span className="text-orange-600 bg-orange-200 skills">
                 MYSQL
               </span>
             </div>
           </div>
           <div className="flex-auto mt-12  md:w-32 md:mt-0">
-            <Image src="/deneme.jpg" width={500} height={500} className="rounded-md md:ml-4" />
+            <Image src="/deneme.jpg" width={500} height={500} alt="Mehmet Elbeyli Blog" className="rounded-md md:ml-4" />
           </div>
         </div>
       </main>
