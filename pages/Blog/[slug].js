@@ -11,7 +11,11 @@ function PostDetay({ post1 }) {
   // const router = useRouter();
   // const url = router.query.slug;
   // const post1 = allPosts.filter((p) => p.url === "/Blog/" + url);
-  console.log(post1);
+  //console.log(post1);
+  const router = useRouter();
+  if (router.isFallback) {
+    return <div>Loading...</div>
+  }
   return (
     <div>
       <Head>
